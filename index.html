@@ -58,7 +58,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:false, maxZoom:28, minZoom:1
-        }).fitBounds([[34.84566700700263,137.39706504334657],[35.09041862377136,137.91859908017292]]);
+        }).fitBounds([[34.845667007002625,137.43409310073292],[35.09041862377136,137.8815710227866]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -694,7 +694,8 @@
                         <td colspan="2">' + (feature.properties['N02_004'] !== null ? autolinker.link(String(feature.properties['N02_004']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['N02_005'] !== null ? autolinker.link(String(feature.properties['N02_005']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">N02_005</th>\
+                        <td>' + (feature.properties['N02_005'] !== null ? autolinker.link(String(feature.properties['N02_005']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -756,7 +757,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -837,7 +839,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -918,7 +921,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -999,7 +1003,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1080,7 +1085,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1161,7 +1167,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1242,7 +1249,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1320,7 +1328,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城'] !== null ? autolinker.link(String(feature.properties['住所（新城']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1401,7 +1410,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1482,7 +1492,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -1563,7 +1574,8 @@
                         <td colspan="2">' + (feature.properties['番号'] !== null ? autolinker.link(String(feature.properties['番号']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
+                        <th scope="row">名称</th>\
+                        <td>' + (feature.properties['名称'] !== null ? autolinker.link(String(feature.properties['名称']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）'] !== null ? autolinker.link(String(feature.properties['住所（新城市HP・愛知県公式ガイド・キラッと奥三河観光ナビに記載住所等）']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
