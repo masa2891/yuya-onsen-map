@@ -195,6 +195,9 @@
             justify-content: center;
             align-items: center;
         }
+        .leaflet-control-layers-expanded .leaflet-control-layers-toggle {
+            display: none;
+        }
         .css__2 {
             text-shadow: -2px -2px 0 #fafafa,
                 -2px -1px 0 #fafafa,
